@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Fyodor Dostoevsky's Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font: Arial, sans-serif;
+            background-image: url('https://aestheticsresearch.files.wordpress.com/2021/04/dostoevsky.jpeg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            max-height: 50px;
+            vertical-align: middle;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .book {
+            width: calc(35% - 40px);
+            margin: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative; /* Ensure proper overlay positioning */
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.5s ease;
+        }
+
+        .book:hover img {
+            opacity: 0.3;
+        }
+
+        .book .middle {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .book:hover .middle {
+            opacity: 1;
+        }
+
+        .book .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .book-info {
+            padding: 20px;
+        }
+
+        .book-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .book-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        .social-icons a.instagram-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            background-color: #000000; 
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a.instagram-link:hover {
+            background-color: #c13584; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.tbceducation.ge/" target="_blank">
+                <img src="https://logodix.com/logo/2157914.png" alt="TBC Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="books-container">
+        <div class="book">
+            <img src="https://www.simbasible.com/wp-content/uploads/2020/12/22-8.jpg" alt="Crime and Punishment">
+            <div class="middle">
+                <div class="text">Crime and Punishment</div>
+            </div>
+            <div class="book-info">
+                <h2>Crime and Punishment</h2>
+                <p><strong>Story:</strong> Crime and Punishment is a psychological drama that follows Rodion Raskolnikov, a poor ex-student in Saint Petersburg who formulates a plan to kill an unscrupulous pawnbroker for her money. The novel explores themes of morality, redemption, and the psychological effects of guilt.</p>
+                <p><strong>Main Characters:</strong> Rodion Raskolnikov, Sonia Marmeladova, Arkady Svidrigailov</p>
+                <p><strong>Main Themes:</strong> Moral dilemmas, redemption, nihilism</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://russianliteraturesociety.com/wp-content/uploads/2020/08/the-brothers-karamazov-135-640x1024.jpg" alt="The Brothers Karamazov">
+            <div class="middle">
+                <div class="text">The Brothers Karamazov</div>
+            </div>
+            <div class="book-info">
+                <h2>The Brothers Karamazov</h2>
+                <p><strong>Story:</strong> The Brothers Karamazov is a philosophical novel set in 19th-century Russia, exploring the themes of faith, doubt, and reason through the lives of the Karamazov brothers: Dmitri, Ivan, and Alexei, and their father Fyodor Pavlovich.</p>
+                <p><strong>Main Characters:</strong> Dmitri Karamazov, Ivan Karamazov, Alexei Karamazov, Fyodor Pavlovich Karamazov</p>
+                <p><strong>Main Themes:</strong> Faith vs. doubt, father-son relationships, free will vs. determinism</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://images.thenile.io/r1000/9781857151824.jpg" alt="Demons">
+            <div class="middle">
+                <div class="text">Demons</div>
+            </div>
+            <div class="book-info">
+                <h2>Demons</h2>
+                <p><strong>Story:</strong> Demons (also known as The Possessed or The Devils) is a novel that examines political extremism and nihilism in 19th-century Russia. It follows the descent of a provincial town into chaos after the arrival of a revolutionary agitator, Pyotr Verkhovensky.</p>
+                <p><strong>Main Characters:</strong> Pyotr Stepanovich Verkhovensky, Nikolai Stavrogin, Stepan Trofimovich Verkhovensky</p>
+                <p><strong>Main Themes:</strong> Political radicalism, nihilism, moral decay</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1665484597i/62966859.jpg" alt="The Idiot">
+            <div class="middle">
+                <div class="text">The Idiot</div>
+            </div>
+            <div class="book-info">
+                <h2>The Idiot</h2>
+                <p><strong>Story:</strong> The Idiot centers on Prince Lev Nikolayevich Myshkin, a compassionate and naïve young man who returns to Russia from Switzerland and finds himself embroiled in the complexities of Russian society. The novel explores the clash between goodness and the corrupt world around him.</p>
+                <p><strong>Main Characters:</strong> Prince Lev Nikolayevich Myshkin, Nastassya Filippovna, Aglaya Yepanchin</p>
+                <p><strong>Main Themes:</strong> Goodness vs. society, innocence, spiritual redemption</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625584793/notes-from-the-underground-9781625584793_hr.jpg" alt

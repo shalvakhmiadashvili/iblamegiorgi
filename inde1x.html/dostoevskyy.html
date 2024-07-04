@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Fyodor Dostoevsky's Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font: Arial, sans-serif;
+           
+            background-image: url('https://aestheticsresearch.files.wordpress.com/2021/04/dostoevsky.jpeg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            max-height: 50px;
+            vertical-align: middle;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .book {
+            width: calc(50% - 40px);
+            margin: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            width: 100%; 
+            height: auto;
+        }
+
+        .book-info {
+            padding: 10px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        .social-icons a.instagram-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            background-color: #000000; 
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a.instagram-link:hover {
+            background-color: #c13584; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.tbceducation.ge/" target="_blank">
+                <img src="https://logodix.com/logo/2157914.png" alt="TBC Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="books-container">
+        <div class="book">
+            <img src="https://www.simbasible.com/wp-content/uploads/2020/12/22-8.jpg" alt="Crime and Punishment">
+            <div class="book-info">
+                <h2>Crime and Punishment</h2>
+                <p>A psychological drama about moral dilemmas and redemption.</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://russianliteraturesociety.com/wp-content/uploads/2020/08/the-brothers-karamazov-135-640x1024.jpg" alt="The Brothers Karamazov">
+            <div class="book-info">
+                <h2>The Brothers Karamazov</h2>
+                <p>An exploration of faith, doubt, and reason.</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://images.thenile.io/r1000/9781857151824.jpg" alt="Demons">
+            <div class="book-info">
+                <h2>Demons</h2>
+                <p>A political novel about radicalism and nihilism.</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1665484597i/62966859.jpg" alt="The Idiot">
+            <div class="book-info">
+                <h2>The Idiot</h2>
+                <p>A novel about the conflict between goodness and society.</p>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625584793/notes-from-the-underground-9781625584793_hr.jpg" alt="Notes from Underground">
+            <div class="book-info">
+                <h2>Notes from Underground</h2>
+                <p>A novella about existential despair and human consciousness.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>&copy;Fyodor Dostoevsky Books.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/user188006/" class="instagram-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
